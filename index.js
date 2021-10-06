@@ -9,7 +9,7 @@ const requestOptions = {
 
 let datas;
 
-fetch('', requestOptions)
+fetch('https://api.airtable.com/v0/', requestOptions)
   .then(response => response.text())
   .then(result => {
     let parsedData = JSON.parse(result);
